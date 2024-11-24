@@ -1,8 +1,8 @@
-.navbar-item{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-right: 100px;
-
-}
 button{
+    margin-right: 50px;
     width: 60px;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }

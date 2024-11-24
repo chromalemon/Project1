@@ -14,13 +14,18 @@
     </head>
     <body>
         <div class="navbar">
-            <button><a href="#" class="navbar-item">Login</a></button>
-            <button><a href="#" class="navbar-item">About</a></button>
-            <button><a href="#" class="navbar-item">Contact</a></button>
+            <button class="navbar-item" onclick="window.location.href='/'">Home</button>
+            <button class="navbar-item"onclick="window.location.href='/#/'">Login</button>
+            <button class="navbar-item" onclick="window.location.href='/about/'">About</button>
+            <button class="navbar-item" onclick="window.location.href='/contact/'">Contact</button>
         </div>
         <div class="body-content">
             {% block content %}
             {% endblock %}
+            <hr/>
+            <footer>
+                <p>&copy; {% now "Y" %}</p>
+            </footer>
         </div>
         
         <script src="" async defer></script>

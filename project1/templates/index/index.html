@@ -2,22 +2,19 @@
 {% block head %}
 
     {% load static %}
-    <link rel="stylesheet" href={% static 'css/index.css' %} type="text/css">
+    <link rel="stylesheet" href="{% static 'css/index.html' %}" type="text/css">
 
 {% endblock %}
 {% block title %}
 
-Welcome!
+    Home
 
 {% endblock %}
 {% block content %}
-
-    <div class="welcome">
-        <h1>About SchoolStacker</h1>
-        <h3> SchoolStacker is an innovative, modern approach to school management software. </h3>
+    <div class="home">
+        <h1> Home page </h1>
+        <h3> To login / sign up, click "Login" </h3>
+        <h3> To read about SchoolStacker, click "About" </h3>
+        <h3> To contact us, click "Contact" </h3>
     </div>
-
 {% endblock %}
-
-
-

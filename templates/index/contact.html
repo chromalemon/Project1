@@ -1,13 +1,9 @@
-{% extends "index/layout.html" %}
+{% extends "layouts/navbar.html" %}
 {% block head %}
 
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/contact.css' %}" type="text/css">
-
-{% endblock %}
-{% block title %}
-
-Contact us 
+    <title> Contact us </title>
+    <link rel="stylesheet" href="{% static 'css/index/contact.css' %}" type="text/css">
 
 {% endblock %}
 {% block content %}

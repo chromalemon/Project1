@@ -1,13 +1,9 @@
-{% extends "index/layout.html" %}
+{% extends "layouts/navbar.html" %}
 {% block head %}
 
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/index.html' %}" type="text/css">
-
-{% endblock %}
-{% block title %}
-
-    Home
+    <title> Home </title>
+    <link rel="stylesheet" href="{% static 'css/index/index.html' %}" type="text/css">
 
 {% endblock %}
 {% block content %}

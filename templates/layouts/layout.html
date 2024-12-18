@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/layouts/layout.css' %}" type="text/css">
+        <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        <div class="body-content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <hr/>
+        <footer>
+            <p>&copy; {% now "Y" %}</p> 
+        </footer>
+        <script src="" async defer></script>
+    </body>
+</html>

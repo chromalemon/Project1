@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html>
-    <head>
+{% extends "layouts/layout.html" %}
+{% block head %}
     {% load static %}
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'css/login.css' %}">
-        <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
-    </head>
-    <body>
-        <div class="choice">
-            <button class="choice-item" onclick="window.location.href='student/'">Student</button>
-            <button class="choice-item"onclick="window.location.href='staff/'">Staff</button>
-        </div>
-        <script src="" async defer></script>
-    </body>
-</html>
+    <title> Login </title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" type="text/css">
+{% endblock %}
+{% block content %}
+    <div class="choice">
+        <button class="choice-item" onclick="window.location.href='student/'">Student</button>
+        <button class="choice-item"onclick="window.location.href='staff/'">Staff</button>
+    </div>
+{% endblock %}

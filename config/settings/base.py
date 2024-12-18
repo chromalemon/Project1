@@ -12,7 +12,7 @@ DEFAULT_APP = [
     'django.contrib.staticfiles',
     
 ]
-CREATED_APP = ['apps.users.apps.UsersConfig',
+CREATED_APP = ['apps.users',
                ]
 
 THIRD_PARTY_APP =['rest_framework',]
